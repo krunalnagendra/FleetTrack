@@ -1,17 +1,12 @@
 {
-  "name": "monorepo",
+  "name": "fleettrack",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm run dev --prefix app/web",
-    "build": "npm run build --prefix app/web",
-    "start": "npm run preview --prefix app/web",
-    "lint": "npm run lint --prefix app/web"
-  },
-  "devDependencies": {
-    "concurrently": "^9.1.2"
-  },
-  "dependencies": {
-    "next-themes": "^0.4.6"
+    "dev": "cd app/web && npm run dev",
+    "build": "cd app/web && npm run build",
+    "start": "cd app/web && npm run start",
+    "lint": "cd app/web && npm run lint",
+    "postinstall": "cd app/web && npm install"
   }
 }
