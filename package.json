@@ -11,9 +11,6 @@
   "devDependencies": {
     "concurrently": "^9.1.2"
   },
-  "workspaces": [
-    "app/*"
-  ],
   "dependencies": {
     "next-themes": "^0.4.6"
   }
